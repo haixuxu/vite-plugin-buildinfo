@@ -1,0 +1,49 @@
+{
+  "name": "vite-plugin-buildinfo",
+  "version": "0.0.1",
+  "description": "inject build info to html",
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/esm/index.js",
+      "require": "./dist/cjs/index.js"
+    }
+  },
+  "maintainers": [
+    "xuxihai"
+  ],
+  "files": [
+    "dist"
+  ],
+  "type": "module",
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "scripts": {
+    "build": "rimraf dist && node build.js"
+  },
+  "author": "xuxihai",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/haixuxu/vite-plugin-buildinfo",
+    "directory": "vite-plugin-buildinfo"
+  },
+  "bugs": {
+    "url": "https://github.com/haixuxu/vite-plugin-buildinfo/issues"
+  },
+  "homepage": "https://github.com/haixuxu/vite-plugin-buildinfo/tree/master/#readme",
+  "peerDependencies": {
+    "vite": ">=4.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.5.1",
+    "esbuild": "^0.11.0",
+    "glob": "^7.1.6",
+    "rimraf": "^5.0.0",
+    "typescript": "^5.0.0"
+  }
+}
