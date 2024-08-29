@@ -1,4 +1,4 @@
-# vite-plugin-buildinfo
+# @bbk47/vite-plugin-buildinfo
 
 html中注入打包信息
 
@@ -9,11 +9,11 @@ html中注入打包信息
 **vite version:** >=4.0.0
 
 ```bash
-yarn add vite-plugin-buildinfo -D
+yarn add @bbk47/vite-plugin-buildinfo -D
 # or
-npm i vite-plugin-buildinfo -D
+npm i @bbk47/vite-plugin-buildinfo -D
 # or
-pnpm add vite-plugin-buildinfo -D
+pnpm add @bbk47/vite-plugin-buildinfo -D
 ```
 
 ## 使用
@@ -23,7 +23,7 @@ pnpm add vite-plugin-buildinfo -D
 ```ts
 import { UserConfigExport, ConfigEnv } from "vite";
 
-import { viteBuildInfo } from "vite-plugin-buildinfo";
+import { viteBuildInfo } from "@bbk47/vite-plugin-buildinfo";
 
 export default ({ command }: ConfigEnv): UserConfigExport => {
   return {
