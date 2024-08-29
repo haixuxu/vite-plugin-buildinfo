@@ -1,5 +1,5 @@
 {
-  "name": "vite-plugin-buildinfo",
+  "name": "@bbk47/vite-plugin-buildinfo",
   "version": "0.0.1",
   "description": "inject build info to html",
   "main": "dist/cjs/index.js",
